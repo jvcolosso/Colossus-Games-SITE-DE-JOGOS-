@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colossus Games</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo-nav">
+                    <img src="assets/img/logo.png" alt="Colossus Logo">
+                    <h1>Colossus Games</h1>
+                </li>
+                <li><a href="#modalQuemSomos" class="modal-btn">Quem Somos</a></li>
+                <li><a href="index.html">Jogos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="logo-center">
+            <div class="neon-glow"></div>
+            <img src="assets/img/logo.png" alt="Colossus Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/jv_colosso" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/jvcolosso" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colossus Games by João Victor. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modalQuemSomos" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Quem Somos!!!</h2>
+            <br>
+            <br>
+            <p>Bem-vindo ao Colossus Games!
+                Descubra um mundo de diversão e aventura no Colossus Games, o site definitivo para todos os amantes de jogos! Aqui, mergulhe em uma vasta seleção de jogos online gratuitos, projetados para todos os gostos e idades. Seja você um fã de ação, aventura, quebra-cabeças ou jogos clássicos, temos algo especial esperando por você.
+                <br>
+                <br>
+                Estamos muito felizes em tê-lo aqui e esperamos que aproveite ao máximo tudo o que oferecemos. Explore nossa vasta seleção de jogos e compartilhe suas conquistas com nossa comunidade. Se tiver dúvidas ou sugestões, não hesite em nos contatar. Juntos, faremos do Colossus Games seu lugar favorito para jogar e se divertir!
+
+                Obrigado por fazer parte da nossa comunidade. Aproveite e divirta-se!
+                
+                A Equipe do Colossus Games
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Modal Script
+        var modal = document.getElementById("modalQuemSomos");
+        var btns = document.getElementsByClassName("modal-btn");
+        var span = document.getElementsByClassName("close")[0];
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                modal.style.display = "block";
+            }
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../assets/img/fundo2.jpg'); /* Substitua pelo caminho da sua imagem */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat 
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+    
+
+.botao-escolha {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: start;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#resultado {
+    font-size: 18px;
+    margin: 20px 0;
+    color: white;
+}
+
+#historico {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
